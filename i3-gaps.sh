@@ -29,6 +29,9 @@ cd build
 make
 sudo make install
 
+cd ~
+mkdir xx
+cd xx
 
 # Now i3-gaps should be installed.
 sudo apt install feh compton i3blocks rofi zsh
