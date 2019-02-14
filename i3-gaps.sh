@@ -29,12 +29,14 @@ cd build
 make
 sudo make install
 
+
 # Now i3-gaps should be installed.
 sudo apt install feh compton i3blocks rofi zsh
 
 # install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+cd ~
 # i3 config file
 git clone https://github.com/da-edra/dotfiles.git
 # power-line-font
