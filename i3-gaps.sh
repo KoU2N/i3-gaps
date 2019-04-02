@@ -34,7 +34,7 @@ mkdir xx
 cd xx
 
 # Now i3-gaps should be installed.
-sudo apt install feh compton i3blocks rofi zsh
+sudo apt install feh compton i3blocks rofi zsh xbindkeys ranger
 
 # install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -44,3 +44,9 @@ git clone https://github.com/da-edra/dotfiles.git
 # power-line-font
 # git https://github.com/gabrielelana/awesome-terminal-fonts.git
 git clone https://github.com/powerline/fonts.git
+
+# font 
+sudo apt install fonts-wqy-microhei fonts-powerline fonts-font-awesome
+
+### 安装fcitx google拼音 日文输入法
+sudo apt-get install fcitx fcitx-googlepinyin im-config fcitx-frontend-gtk2 fcitx-frontend-gtk3 fcitx-mozc
