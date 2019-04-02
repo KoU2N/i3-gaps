@@ -1,8 +1,8 @@
-sudo apt install xorg bspwm dmenu chromium
-mkdir -p .config/bspwm
-mkdir -p .config/sxhkd
+sudo apt install xorg bspwm dmenu chromium y
+mkdir -p ~/.config/bspwm
+mkdir -p ~/.config/sxhkd
 
-git clone https://github.com/baskerville/bspwm
+git clone https://github.com/baskerville/bspwm ~/.
 
 cp bspwm/examples/bspwmrc ~/.config/bspwm/
 cp bspwm/examples/sxhkdrc ~/.config/sxhkd/
