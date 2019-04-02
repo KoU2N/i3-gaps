@@ -1,4 +1,4 @@
-sudo apt install xorg bspwm dmenu chromium y
+sudo apt install xorg bspwm dmenu chromium -y
 mkdir -p ~/.config/bspwm
 mkdir -p ~/.config/sxhkd
 
