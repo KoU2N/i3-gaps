@@ -2,7 +2,7 @@
 
 ## Dependencies
 
-sudo apt install libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev libxcb-icccm4-dev libyajl-dev libstartup-notification0-dev libxcb-randr0-dev libev-dev libxcb-cursor-dev libxcb-xinerama0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev autoconf xutils-dev libtool automake 
+sudo apt install -y xorg libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev libxcb-icccm4-dev libyajl-dev libstartup-notification0-dev libxcb-randr0-dev libev-dev libxcb-cursor-dev libxcb-xinerama0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev autoconf xutils-dev libtool automake 
 
 
 mkdir tmp
@@ -34,7 +34,7 @@ mkdir xx
 cd xx
 
 # Now i3-gaps should be installed.
-sudo apt install feh compton i3blocks rofi zsh xbindkeys ranger
+sudo apt install -y feh compton i3blocks rofi zsh xbindkeys ranger 
 
 # install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -43,10 +43,12 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 git clone https://github.com/da-edra/dotfiles.git
 # power-line-font
 # git https://github.com/gabrielelana/awesome-terminal-fonts.git
-git clone https://github.com/powerline/fonts.git
+#git clone https://github.com/powerline/fonts.git
 
 # font 
 sudo apt install fonts-wqy-microhei fonts-powerline fonts-font-awesome
 
 ### 安装fcitx google拼音 日文输入法
-sudo apt-get install fcitx fcitx-googlepinyin im-config fcitx-frontend-gtk2 fcitx-frontend-gtk3 fcitx-mozc
+sudo apt install -y fcitx fcitx-googlepinyin im-config fcitx-frontend-gtk2 fcitx-frontend-gtk3 fcitx-mozc fcitx-config-gtk fcitx-ui-classic zenity xserver-xephyr
+
+sudo apt install -y lightdm
