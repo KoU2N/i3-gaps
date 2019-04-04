@@ -63,7 +63,7 @@ sudo apt install -y rxvt-unicode-256color
 echo "${RED}==================Install input lightdm=================="
 sudo apt install -y lightdm lightdm-gtk-greeter at-spi2-core
 ## 安装通知
-sudo apt install -y xfce4-notifyd libnotify-bin
+sudo apt install -y xfce4-notifyd libnotify-bin dunst
 
 # 安装chromium
 echo "${RED}==================Install input chromium=================="
