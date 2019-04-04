@@ -39,8 +39,6 @@ echo "==================i3-graps done=================="
 echo "==================Install i3-graps related software =================="
 sudo apt install -y feh compton i3blocks rofi zsh xbindkeys ranger 
 
-# install oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # i3 config file
 git clone https://github.com/kou2n/dotfiles.git
@@ -67,3 +65,7 @@ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 echo "copy i3 config to local"
 cp -a ~/xx/dotfiles/* ~/.
 echo ""==================All done,Enjoy!!!=================="
+
+# install oh-my-zsh
+echo ""==================Last,install oh-my-zsh,need type password!!!=================="
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
