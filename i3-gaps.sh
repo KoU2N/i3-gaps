@@ -1,4 +1,4 @@
-# Installing i3-gaps
+# Installing i3-gaps for ubuntu 18.04
 
 RED='\033[0;31m'
 
@@ -32,14 +32,12 @@ make
 sudo make install
 
 cd ~
-mkdir xx
-cd xx
 
 echo "${RED}==================i3-graps done=================="
 
 # Now i3-gaps should be installed.
 echo "${RED}==================Install i3-graps related software =================="
-sudo apt install -y feh compton i3blocks rofi zsh xbindkeys ranger 
+sudo apt install -y feh compton i3blocks rofi zsh xbindkeys ranger neofetch
 
 
 # i3 config file
@@ -50,13 +48,23 @@ git clone https://github.com/kou2n/dotfiles.git
 
 # font 
 echo "${RED}==================Install font=================="
-sudo apt install fonts-wqy-microhei fonts-powerline fonts-font-awesome
+sudo apt install -y fonts-wqy-microhei fonts-powerline fonts-font-awesome
+
+# audio
+echo "${RED}==================Install audio=================="
+sudo apt install -y pulseaudio  pavucontrol
 echo "${RED}==================Install input method=================="
 ### 安装fcitx google拼音 日文输入法
 sudo apt install -y fcitx fcitx-googlepinyin im-config fcitx-frontend-gtk2 fcitx-frontend-gtk3 fcitx-mozc fcitx-config-gtk fcitx-ui-classic zenity xserver-xephyr
+##
+echo "${RED}==================Install terminal urxvt=================="
+sudo apt install -y rxvt-unicode-256color
 # 登录管理器
 echo "${RED}==================Install input lightdm=================="
-sudo apt install -y lightdm
+sudo apt install -y lightdm lightdm-gtk-greeter at-spi2-core
+## 安装通知
+sudo apt install -y xfce4-notifyd libnotify-bin
+
 # 安装chromium
 echo "${RED}==================Install input chromium=================="
 sudo apt install -y chromium-browser emacs25
