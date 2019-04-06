@@ -66,14 +66,14 @@ sudo apt install -y lightdm lightdm-gtk-greeter at-spi2-core
 sudo apt install -y xfce4-notifyd libnotify-bin dunst
 
 # 安装chromium
-echo "${RED}==================Install input chromium=================="
+echo "${RED}==================Install chromium=================="
 sudo apt install -y chromium-browser emacs25
 # 安装spacemacs
 echo "${RED}==================Install input spacemacs=================="
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 # 安装i3配置
 echo "${RED}}==================copy i3 config to local}=================="
-cp -a ~/dotfiles/* ~/.
+cp -a ~/dotfiles/. ~/.
 echo "${RED}==================All done,Enjoy!!!=================="
 
 # install oh-my-zsh
